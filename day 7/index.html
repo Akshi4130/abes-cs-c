@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        function colorHandler(color)
+        {
+            console.log("function is enabled",color);
+            const bulb = document.getElementById("bulb");
+            console.log("feature",color,bulb);
+            bulb-style-backgroundColor=color;
+            bulb.innertext = color;
+        };
+    </style>
+</head>
+<body>
+    <script src="function.js"></script>
+    <div id="bulb">
+    </div>
+    <input type="button" value="RED" onclick="colorHandler()">
+    <input type="button" value="blue" onclick="colorHandler()">
+    <input type="button" value="green" onclick="colorHandler()">
+    <input type="button" value="yellow" onclick="colorHandler()">
+</body>
+</html>
